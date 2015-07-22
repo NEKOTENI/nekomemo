@@ -12,6 +12,12 @@
     <p>2015/7/21(火) 9:45</p>
     <p>今日のねこ缶は気に入ったみたい</p>
     <img src="猫缶の画像" alt="ねこ缶">
+
+    <% @memos.each do |memo| %>
+      <%= memo.text %>
+    <% end %>
+
+
   </body>
 </html>
 
