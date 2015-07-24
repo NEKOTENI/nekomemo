@@ -9,6 +9,11 @@
   <body>
     <h1>Timeline建設予定地</h1>
 
+    <%= form_for(@memo, url: '/uketori', method: 'post') do |f| %>
+      <%= f.text_area :text, placeholder: "今日のメモ" %>
+      <%= f.submit "書き込む" %>
+    <% end %>
+
     <p>2015/7/21(火) 9:45</p>
     <p>今日のねこ缶は気に入ったみたい</p>
     <img src="猫缶の画像" alt="ねこ缶">
