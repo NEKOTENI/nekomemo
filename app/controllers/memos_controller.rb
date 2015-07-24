@@ -1,6 +1,6 @@
 class MemosController < ApplicationController
   def create
-    Memo.create!(create_params)
+    Memo.create(create_params)
     redirect_to controller: 'timeline', action: :index
   end
 
