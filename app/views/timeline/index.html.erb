@@ -19,7 +19,12 @@
     <img src="猫缶の画像" alt="ねこ缶">
 
     <% @memos.each do |memo| %>
-      <%= memo.text %>
+      <ul>  
+        <li>
+        <%= memo.updated_at %><br>
+        <%= memo.text %>
+        </li>
+      </ul>
     <% end %>
 
 
